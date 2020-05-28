@@ -57,7 +57,7 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
                     multipartFormData.append((value.data(using: .utf8))!, withName: key)
                 }
         },
-            to: "http://101.0.70.50:7979/audio?userid=2&duration=00:00:20&filename=\(fileName)",
+            to: "http://192.168.0.253:8080/audio?userid=2&duration=00:00:20&filename=\(fileName)",
             method: .post,
             encodingCompletion: { encodingResult in
                 switch encodingResult {
